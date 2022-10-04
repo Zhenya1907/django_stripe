@@ -127,6 +127,9 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+.pg-env
+persistentdata/*
+locals_vars.py
 
 # Spyder project settings
 .spyderproject

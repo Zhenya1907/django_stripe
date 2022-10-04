@@ -1,0 +1,14 @@
+{% extends 'payment/base.html' %}
+
+{% block title %} Items {% endblock title %}
+
+{% block content %}
+        {% for item in items %}
+                <h3>{{ item.name }}</h3>
+                <h5>{{ item.get_price }} $</h5>
+
+                <form action="{% url 'item' item.id %}" method="GET">
+                        <button>Detail</button>
+                </form>
+        {% endfor %}
+{% endblock content %}
